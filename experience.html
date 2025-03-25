@@ -21,9 +21,10 @@
     <div class="page">
       <h1>Professional Experience</h1>
       <ul>
-        <li>Kimberly-Clark eCommerce Growth Intern</li>
-        <li>Lots of work at Emory University</li>
-        <li>Strategic Consulting after graduation from Georgetown</li>
+        <li>May 2022 - August 2022: Corporate Financial Planning & Analysis Intern @ STADA Arzneimittel AG</li>
+        <li>May 2023 - August 2023: eCommerce Growth Intern @ Kimberly-Clark</li>
+        <li>May 2021 - May 2024: Various Positions @ Emory University, Goizueta Business School</li>
+        <li>May 2025: Strategic Consulting after graduation from Georgetown University</li>
       </ul>
       <button id="download-resume" type="button" name="button">Download Resume</button>
     </div>
@@ -39,14 +40,16 @@
         //
         // FYI: this is a website interactivity teaser...
         //
-        //var resumeButton = document.getElementById("download-resume")
+        var resumeButton = document.getElementById("download-resume")
         //
-        //function handleClick(event) {
-        //    console.log("YOU CLICKED ME!")
-        //    console.log(event.target)
-        //}
+        function handleClick(event) {
+          const downloadLink = document.createElement("a");
+          downloadLink.href = "Caroline_Radke_Resume.pdf";
+          downloadLink.download = "Caroline_Radke_Resume.pdf";
+          downloadLink.click();
+        }
         //
-        //resumeButton.addEventListener("click", handleClick, false)
+        resumeButton.addEventListener("click", handleClick, false)
 
     </script>
   </body>
