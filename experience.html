@@ -37,18 +37,16 @@
 
     <script type="text/javascript">
 
-        //
-        // FYI: this is a website interactivity teaser...
-        //
+       
         var resumeButton = document.getElementById("download-resume")
-        //
+        
         function handleClick(event) {
           const downloadLink = document.createElement("a");
           downloadLink.href = "Caroline_Radke_Resume.pdf";
           downloadLink.download = "Caroline_Radke_Resume.pdf";
           downloadLink.click();
         }
-        //
+        
         resumeButton.addEventListener("click", handleClick, false)
 
     </script>
